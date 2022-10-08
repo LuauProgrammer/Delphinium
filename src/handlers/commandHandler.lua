@@ -16,8 +16,7 @@ return function(discordia, client)
             local module = require("../commands/" .. fileName)
             local type = type(module)
             assert(type == "table", "Expected table, got " .. type)
-            assert(module.execute and module.name and module.cooldown and module.permissions and module.restricted ~= nil
-                ,
+            assert(module.execute and module.name,
                 "Missing required fields from command table (ie: name, execute function, permissions,  cooldown, restricted)") --//Bare-bones properties/functions needed to operate.
             assert(not client._commands[module.name], "Duplicate commands are not allowed.")
             client._commands[module.name] = module
