@@ -1,0 +1,22 @@
+{
+    "token": "MTAyODEzNDM4NzQ1MzI4MDM0Ng.GEoooh.LjRTIUdgVmF0Z-C5VHLnpo5eBxCi7O_GPG_Pbk",
+    "prefix": ">",
+    "colors": {
+        "bot": "#282c3c",
+        "error": "#de554e",
+        "neutral": "#F6911E",
+        "success": "#43d177"
+    },
+    "bypass": [
+        "355468700150792193",
+        "759164557922664491",
+        "770094978730557471"
+    ],
+    "presence": {
+        "status": "idle",
+        "game": {
+            "name": "with permissions",
+            "type": 0
+        }
+    }
+}
