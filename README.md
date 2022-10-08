@@ -1,7 +1,7 @@
 # ⚠️ I AM NOT RESPONSIBLE FOR ANY DESTROYED SERVERS ⚠️
 ## Delphinium
 
-Simple and lightweight server destruction utility. This bot uses luvit & my RSBF repository. Make sure you have luvit
+Simple and lightweight server destruction utility. This bot uses luvit & my RSBF repository. Make sure you have luvit installed.
 
 ### Setup
 
