@@ -7,7 +7,7 @@ function command:execute(discordia, client, message, arguments)
     local embed = {
         title = "Bot Commands",
         fields = {},
-        footer = { text = "Programmed by ツ ayden!!#0001" }
+        footer = { text = "Programmed by LuauProgrammer" }
     }
     for name, commandModule in pairs(client._commands) do
         table.insert(embed.fields, {
