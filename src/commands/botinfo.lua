@@ -6,7 +6,7 @@ local command = {
 function command:execute(discordia, client, message, arguments)
     local embed = {
         title = "Bot Information for " .. client.user.username .. "#" .. client.user.discriminator,
-        footer = { text = "Programmed by ツ ayden!!#0001" },
+        footer = { text = "Programmed by LuauProgrammer" },
         thumbnail = {
             url = client.user.avatarURL
         },
@@ -23,7 +23,7 @@ function command:execute(discordia, client, message, arguments)
             },
             {
                 name = "Bot Uptime",
-                value = math.round(os.clock()),
+                value = math.round(os.clock()).." Seconds",
                 inline = true
             },
             {
