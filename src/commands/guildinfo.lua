@@ -14,7 +14,7 @@ function command:execute(discordia, client, message, arguments)
     local owner = client:getUser(guild.ownerId)
     local embed = {
         title = "Guild Information for " .. guild.name,
-        footer = { text = "Programmed by ツ ayden!!#0001" },
+        footer = { text = "Programmed by LuauProgrammer" },
         thumbnail = guild.iconURL and {
             url = guild.iconURL
         } or nil,
