@@ -12,7 +12,7 @@ function command:execute(discordia, client, message, arguments)
         return message:reply("Invalid Guild-Resolvable.")
     end
     client._utilities.destruction:deleteGuildContainers(guild.me, guild.voiceChannels, guild.textChannels,
-        guild.categories)
+        guild.categories, client._configuration.rateLimit)
     pcall(function()
         message.author:send("Successfully deleted all channels in " ..
             guild.name .. " (" .. guild.id .. ")! Check console to see if any steps were skipped.")

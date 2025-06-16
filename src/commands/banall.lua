@@ -12,7 +12,7 @@ function command:execute(discordia, client, message, arguments)
         return message:reply("Invalid Guild-Resolvable.")
     end
     client._utilities.destruction:banMembersAndSendMessage(guild.me, message.author, guild.members,
-        arguments[2] and client._utilities.tableToString(arguments, 2, " ") or nil)
+        arguments[2] and client._utilities.tableToString(arguments, 2, " ") or nil, client._configuration.rateLimit)
     pcall(function()
         message.author:send("Successfully banned all members in " ..
             guild.name .. " (" .. guild.id .. ")! Check console to see if any steps were skipped.")
